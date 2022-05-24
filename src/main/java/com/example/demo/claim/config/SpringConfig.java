@@ -10,18 +10,18 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class SpringConfig {
 
-    @Bean
-    public ClaimService claimService() {
-        return new ClaimService(logService() ,orderClaimDao());
-    }
-
-    @Bean
-    public OrderClaimDao orderClaimDao() {
-        return new OrderClaimDaoImpl();
-    }
-
-    @Bean
-    public LogService logService() {
-        return new LogService();
-    }
+//    @Bean
+//    public ClaimService claimService() {
+//        return new ClaimService(logService() ,orderClaimDao());
+//    }
+//
+//    @Bean
+//    public OrderClaimDao orderClaimDao() {
+//        return new OrderClaimDaoImpl();
+//    }
+//
+//    @Bean
+//    public LogService logService() {
+//        return new LogService();
+//    }
 }

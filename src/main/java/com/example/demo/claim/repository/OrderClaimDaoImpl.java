@@ -2,7 +2,7 @@ package com.example.demo.claim.repository;
 
 import org.springframework.stereotype.Repository;
 
-//@Repository
+@Repository
 public class OrderClaimDaoImpl implements OrderClaimDao{
     @Override
     public void insert(String insertData) {
@@ -12,5 +12,10 @@ public class OrderClaimDaoImpl implements OrderClaimDao{
     @Override
     public void update(String updateData) {
         System.out.println("order claim update :" + updateData);
+    }
+
+    @Override
+    public String selectClaim() {
+        return "claim validation info select";
     }
 }
